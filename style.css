@@ -209,8 +209,10 @@ h3 {
   font-size: 1.6em;
 }
 #portrait {
-  height: 220px;
-  width: auto;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 220px;
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 25px;

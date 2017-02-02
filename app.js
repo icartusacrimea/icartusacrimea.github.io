@@ -1,3 +1,54 @@
+$(document).ready(function () {
+    
+  // load modules via public methods
+  svgPort.init();
+
+  // other page body behavior
+  $('.navbar').hide();
+  $('h2').hide().fadeIn(4000);
+  $('.social, .row').hide().fadeIn(5000);
+  
+  $('#projects').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+    }, 1000);
+    $('.navbar').show();
+    $('.navbar-brand').show();
+    location.href = "#portfolio";
+  });
+  
+  $('#user').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
+    $('.navbar').show();
+    $('.navbar-brand').show();
+    location.href = "#about";
+  });
+  
+  $('.navbar-brand').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#heading").offset().top
+    }, 1000);
+    $('.navbar').hide();
+    $('.navbar-brand').hide();
+    location.href = "#heading";
+  });
+
+   $('.portlink').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+    }, 1000);
+  });
+  
+  $('.aboutlink').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
+  });
+    
+});
+
 /* jshint esversion:6 */
 /* globals $, document */
 
@@ -111,53 +162,3 @@ var svgPort = (function () {
 
 })();
 
-$(document).ready(function () {
-    
-  // load modules via public methods
-  svgPort.init();
-
-  // other page body behavior
-  $('.navbar').hide();
-  $('h2').hide().fadeIn(4000);
-  $('.social, .row').hide().fadeIn(5000);
-  
-  $('#projects').click(function() {
-    $('html, body').animate({
-        scrollTop: $("#portfolio").offset().top
-    }, 1000);
-    $('.navbar').show();
-    $('.navbar-brand').show();
-    location.href = "#portfolio";
-  });
-  
-  $('#user').click(function(){
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 1000);
-    $('.navbar').show();
-    $('.navbar-brand').show();
-    location.href = "#about";
-  });
-  
-  $('.navbar-brand').click(function(){
-    $('html, body').animate({
-        scrollTop: $("#heading").offset().top
-    }, 1000);
-    $('.navbar').hide();
-    $('.navbar-brand').hide();
-    location.href = "#heading";
-  });
-
-   $('.portlink').click(function(){
-    $('html, body').animate({
-        scrollTop: $("#portfolio").offset().top
-    }, 1000);
-  });
-  
-  $('.aboutlink').click(function(){
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 1000);
-  });
-    
-});
