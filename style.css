@@ -71,7 +71,7 @@ a.navbar-brand {
 h2 {
   font-size: 1.6em;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 55px;
 }
 
 ul.social {
@@ -184,36 +184,36 @@ h3 {
   font-size: 1.4em;
 }
 
-.Laptop:hover {
-  stroke: #00ECFF;
-  stroke-width: 4;
-}
-
-rect#screen:hover {
-  fill: green;
-}
-
 #port-main {
-  padding-top: 3px;
-  padding-bottom: 20px;
-  margin-top: 0;
+  padding: 5px;
+  margin: 5px;
   text-align: center;
 }
-
-#port-main p {
+#work {
+  padding-top: 0;
+  padding-bottom: 20px;
   color: white;
-  font-size: 1.45em;
 }
-
+#work a {
+  color: #FFB2A1;
+  text-decoration: none;
+}
+#work p {
+  font-size: 1.5em;
+}
+#work h4 {
+  font-size: 1.7em;
+}
 #about {
-  background-color: rgba(133, 100, 173, .7);
+  background-color: rgba(133, 100, 173, .65);
   font-size: 1.6em;
 }
 #portrait {
   height: 220px;
   width: auto;
   border-radius: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
   border: 2px solid #00ECFF;
   padding: 4px;
 }
