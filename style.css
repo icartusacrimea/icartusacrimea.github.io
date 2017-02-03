@@ -212,7 +212,7 @@ h3 {
   margin: 0;
   padding: 0;
   height: auto;
-  width: 220px;
+  width: 450px;
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 25px;
@@ -239,5 +239,13 @@ h3 {
   }
   navbar {
     visibility: hidden;
+  }
+  #portrait {
+    width: 350px;
+  }
+}
+@media (max-device-width: 380px) {
+  #portrait {
+    width: 300px;
   }
 }
