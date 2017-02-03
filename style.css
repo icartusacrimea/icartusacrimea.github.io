@@ -166,22 +166,16 @@ section {
 }
 
 #portfolio {
-  background-color: rgba(13, 200, 173, .7);
+  background-color: rgba(13, 200, 173, .6);
   
 }
 h3 {
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   font-size: 2.8em;
   opacity: 1.0;
   text-align: center;
-}
-
-#skills {
-  margin: 0 auto;
-  padding-bottom: 20px;
-  font-size: 1.4em;
 }
 
 #port-main {
@@ -205,29 +199,19 @@ h3 {
   font-size: 1.7em;
 }
 #about {
-  background-color: rgba(133, 100, 173, .65);
+  background-color: rgba(133, 100, 173, .6);
   font-size: 1.6em;
 }
 #portrait {
   margin: 0;
   padding: 0;
   height: auto;
-  width: 400px;
+  width: 380px;
   border-radius: 15px;
-  margin-top: 20px;
   margin-bottom: 25px;
+  margin-top: 30px;
   border: 2px solid #00ECFF;
   padding: 4px;
-}
-
-.cat_image {
-  height: 150px;
-  width: 150px;
-  padding: 4px;
-  margin: 5px;
-  float: center;
-  border: 2px solid #00ECFF;
-  border-radius: 25px;
 }
 
 @media (max-device-width: 800px) {
@@ -243,9 +227,15 @@ h3 {
   #portrait {
     width: 350px;
   }
+  svg {
+    width: 85%;
+  }
 }
-@media (max-device-width: 380px) {
+@media (max-device-width: 600px) {
+  svg {
+    width: 88%;
+  }
   #portrait {
-    width: 300px;
+    width: 280px;
   }
 }
