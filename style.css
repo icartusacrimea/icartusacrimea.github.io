@@ -12,7 +12,7 @@ body {
   height: 100vh !important;
   color: white;
   font-family: 'Loved by the King', cursive;
-  background: url("https://dl.dropboxusercontent.com/s/c5hcu2stw56510y/other.jpg?dl=0") center bottom fixed no-repeat;
+  background: url("assets/other.jpg") center bottom fixed no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -40,6 +40,7 @@ body {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   color: white;
+  cursor: pointer;
 }
 
 .navbar .nav >li > a:hover {
@@ -63,13 +64,14 @@ div#navbar.navbar-collapse.collapse.in {
 a.navbar-brand {
   padding-left: 40px;
   text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 #icart {
-  font-size: 1.8em;
+  font-size: 1.9em;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   margin: 0;
   padding-top: 55px;
 }
@@ -85,6 +87,7 @@ ul.social {
   color: white;
   width: 34px;
   height: 34px;
+  cursor: pointer;
 }
 
 #codepen {
@@ -146,6 +149,7 @@ button:hover span {
   padding: 0;
   margin: 0 auto;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 #user {
@@ -166,16 +170,18 @@ section {
 }
 
 #portfolio {
-  background-color: rgba(13, 200, 173, .6);
+  background-color: rgba(11, 148, 105, .6);
   
 }
 h3 {
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 2.8em;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  font-size: 2.9em;
+  font-weight: 700;
   opacity: 1.0;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 #port-main {
@@ -191,27 +197,45 @@ h3 {
 #work a {
   color: #FFB2A1;
   text-decoration: none;
+  cursor: pointer;
+}
+#work a:hover {
+  color: #00ECFF;
+  transition: .3s;
 }
 #work p {
-  font-size: 1.5em;
+  font-size: 1.6em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 #work h4 {
-  font-size: 1.7em;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 #about {
-  background-color: rgba(133, 100, 173, .6);
-  font-size: 1.6em;
+  background-color: rgba(89, 79, 131, .6);
+}
+.col-md-6 {
+  font-size: 1.7em;
 }
 #portrait {
-  margin: 0;
-  padding: 0;
+  text-align: center;
   height: auto;
   width: 380px;
+  opacity: .8;
   border-radius: 15px;
   margin-bottom: 25px;
-  margin-top: 30px;
   border: 2px solid #00ECFF;
   padding: 4px;
+}
+.bottom {
+  font-size: 1em;
+  color: white;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 5px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 @media (max-device-width: 800px) {
@@ -237,5 +261,11 @@ h3 {
   }
   #portrait {
     width: 280px;
+  }
+  h3 {
+    padding-top: 20px;
+  }
+  #about {
+    text-align: left;
   }
 }
