@@ -89,14 +89,12 @@ ul.social {
   height: 34px;
   cursor: pointer;
 }
-
 #codepen {
   font-size: 1.1em;
   padding: 8px;
   transition: .3s;
   color: white;
 }
-
 #linked-in {
   font-size: 2.1em;
   padding: 8px;
@@ -198,6 +196,7 @@ h3 {
   color: #FFB2A1;
   text-decoration: none;
   cursor: pointer;
+  transition: .3s;
 }
 #work a:hover {
   color: #00ECFF;
@@ -214,12 +213,12 @@ h3 {
 }
 #about {
   background-color: rgba(89, 79, 131, .6);
+  text-align: center;
 }
 .col-md-6 {
   font-size: 1.7em;
 }
 #portrait {
-  text-align: center;
   height: auto;
   width: 380px;
   opacity: .8;
@@ -228,16 +227,20 @@ h3 {
   border: 2px solid #00ECFF;
   padding: 4px;
 }
-.bottom {
-  font-size: 1em;
+#email {
+  font-size: 1.3em;
+  transition: .3s;
   color: white;
-  text-align: left;
-  padding-top: 50px;
-  padding-left: 5px;
-  margin: 0;
-  padding-bottom: 0;
 }
-
+#email:hover {
+  color: #00ECFF;
+  transition: .3s;
+}
+.bottom {
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+}
 @media (max-device-width: 800px) {
   body, html {
     overflow: scroll !important;
@@ -249,7 +252,7 @@ h3 {
     visibility: hidden;
   }
   #portrait {
-    width: 350px;
+    width: 340px;
   }
   svg {
     width: 90%;
@@ -264,5 +267,6 @@ h3 {
   }
   #about {
     text-align: left;
+    padding-left: 10px;
   }
 }
