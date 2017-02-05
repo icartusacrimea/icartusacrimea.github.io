@@ -252,13 +252,10 @@ h3 {
     width: 350px;
   }
   svg {
-    width: 85%;
+    width: 90%;
   }
 }
 @media (max-device-width: 600px) {
-  svg {
-    width: 88%;
-  }
   #portrait {
     width: 280px;
   }
