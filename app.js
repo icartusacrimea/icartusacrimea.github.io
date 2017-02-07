@@ -3,7 +3,7 @@
 /* @global $ */
 /* @external {@link http://link.to.cdn/jquery.js|CDN} */
 
-var svgPort = (function() {
+var svgPort = (function () {
   'use strict';
 
   var DOM = {};
@@ -126,8 +126,8 @@ $(document).ready(function() {
 
   // other page body behavior
   $('.navbar').hide();
-  $('h2').hide().fadeIn(4000);
-  $('.social, .row').hide().fadeIn(5000);
+  $('h2').hide().fadeIn(3000);
+  $('.social, .glyphicon').hide().fadeIn(4000);
 
   $('#projects').click(function() {
     $('html, body').animate({
@@ -135,7 +135,7 @@ $(document).ready(function() {
     }, 1000);
     $('.navbar').show();
     $('.navbar-brand').show();
-    location.href = "#portfolio";
+    return false;
   });
 
   $('#user').click(function() {
@@ -144,7 +144,7 @@ $(document).ready(function() {
     }, 1000);
     $('.navbar').show();
     $('.navbar-brand').show();
-    location.href = "#about";
+    return false;
   });
 
   $('.navbar-brand').click(function() {
@@ -153,19 +153,21 @@ $(document).ready(function() {
     }, 1000);
     $('.navbar').hide();
     $('.navbar-brand').hide();
-    location.href = "#heading";
+    return false;
   });
 
   $('.portlink').click(function() {
     $('html, body').animate({
       scrollTop: $("#portfolio").offset().top
     }, 1000);
+    return false;
   });
 
   $('.aboutlink').click(function() {
     $('html, body').animate({
       scrollTop: $("#about").offset().top
     }, 1000);
+    return false;
   });
 
 });
