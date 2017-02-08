@@ -125,16 +125,14 @@ $(document).ready(function() {
   svgPort.init();
 
   // other page body behavior
-  $('.navbar').hide();
-  $('h2').hide().fadeIn(3000);
-  $('.social, .glyphicon').hide().fadeIn(4000);
+  $('.navbar').addClass('hidden');
+  $('#heading').hide().fadeIn(3000);
 
   $('#projects').click(function() {
     $('html, body').animate({
       scrollTop: $("#portfolio").offset().top
     }, 1000);
-    $('.navbar').show();
-    $('.navbar-brand').show();
+    $('.navbar, .navbar-brand').removeClass('hidden');
     return false;
   });
 
@@ -142,8 +140,7 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: $("#about").offset().top
     }, 1000);
-    $('.navbar').show();
-    $('.navbar-brand').show();
+    $('.navbar, .navbar-brand').removeClass('hidden');
     return false;
   });
 
@@ -151,8 +148,7 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: $("#heading").offset().top
     }, 1000);
-    $('.navbar').hide();
-    $('.navbar-brand').hide();
+    $('.navbar, .navbar-brand').addClass('hidden');
     return false;
   });
 

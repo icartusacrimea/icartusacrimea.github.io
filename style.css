@@ -42,25 +42,20 @@ body {
   color: white;
   cursor: pointer;
 }
-
 .navbar .nav >li > a:hover {
   color: #00ECFF;
 }
-
 div#navbar.navbar-collapse.collapse.in {
   background: gray;
   border: none;
 }
-
 .navbar-inverse .navbar-brand {
   color: white;
   font-size: 1.3em;
 }
-
 .navbar-inverse .navbar-brand:hover {
   color: #00ECFF;
 }
-
 a.navbar-brand {
   padding-left: 40px;
   text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.8);
@@ -69,19 +64,16 @@ a.navbar-brand {
 #icart {
   font-size: 1.9em;
 }
-
 h2 {
   font-size: 1.7em;
   margin: 0;
   padding-top: 55px;
 }
-
 ul.social {
   list-style: none;
   padding: 10px;
   margin-top: 30px;
 }
-
 .social li {
   display: inline;
   color: white;
@@ -101,7 +93,6 @@ ul.social {
   transition: .3s;
   color: white;
 }
-
 #free-code-camp,
 #github {
   font-size: 2.2em;
@@ -109,7 +100,6 @@ ul.social {
   transition: .3s;
   color: white;
 }
-
 #codepen:hover,
 #free-code-camp:hover,
 #github:hover,
@@ -117,26 +107,21 @@ ul.social {
   color: #00ECFF;
   transition: .3s;
 }
-
 .col-sm-6 {
   color: white;
   display: inline-block;
 }
-
 .btn {
   background: transparent;
   display: inline-block;
 }
-
 button:hover span {
   color: #00ECFF;
   transition: .4s;
 }
-
 .glyphicon {
   font-size: 2.5em;
 }
-
 #projects,
 #user {
   width: auto;
@@ -149,27 +134,22 @@ button:hover span {
   margin-top: 25px;
   cursor: pointer;
 }
-
 #user {
   float: right;
   padding-right: 10px;
 }
-
 #projects {
   float: left;
   padding-left: 10px;
 }
-
 section {
   margin: 0;
   padding: 0;
   padding-top: 55px;
   padding-bottom: 45px;
 }
-
 #portfolio {
-  background-color: rgba(11, 148, 105, .6);
-  
+  background-color: rgba(11, 148, 105, .6); 
 }
 h3 {
   margin: 0 auto;
@@ -181,7 +161,6 @@ h3 {
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
 #port-main {
   padding: 5px;
   margin: 5px;
@@ -240,6 +219,9 @@ h3 {
   text-align: center;
   padding: 10px;
   padding-top: 20px;
+}
+.hidden {
+  visibility: hidden;
 }
 @media (max-device-width: 800px) {
   body, html {
