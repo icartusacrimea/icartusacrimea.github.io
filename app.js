@@ -124,44 +124,30 @@ $(document).ready(function() {
   // load modules via public methods
   svgPort.init();
 
-  // other page body behavior
-  $('.navbar').addClass('hidden');
+  // initial load behavior
+  $('.navbar, .navbar-brand').addClass('hidden');
   $('#heading').hide().fadeIn(3000);
 
-  $('#projects').click(function() {
-    $('html, body').animate({
-      scrollTop: $("#portfolio").offset().top
-    }, 1000);
+  $('a[href*="#"]:not([href="#"])').click(function() {
     $('.navbar, .navbar-brand').removeClass('hidden');
-    return false;
+    $('.navbar, .navbar-brand').addClass('shown');
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
 
-  $('#user').click(function() {
-    $('html, body').animate({
-      scrollTop: $("#about").offset().top
-    }, 1000);
-    $('.navbar, .navbar-brand').removeClass('hidden');
-    return false;
-  });
-
-  $('.navbar-brand').click(function() {
+$('.navbar-brand').click(function() {
+    $('.navbar, .navbar-brand').removeClass('shown');
+    $('.navbar, .navbar-brand').addClass('hidden');
     $('html, body').animate({
       scrollTop: $("#heading").offset().top
-    }, 1000);
-    $('.navbar, .navbar-brand').addClass('hidden');
-    return false;
-  });
-
-  $('.portlink').click(function() {
-    $('html, body').animate({
-      scrollTop: $("#portfolio").offset().top
-    }, 1000);
-    return false;
-  });
-
-  $('.aboutlink').click(function() {
-    $('html, body').animate({
-      scrollTop: $("#about").offset().top
     }, 1000);
     return false;
   });
