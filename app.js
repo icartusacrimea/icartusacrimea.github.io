@@ -1,10 +1,12 @@
+"use strict";
+
 /* @global document */
 /*jslint es6 */
 /* @global $ */
 /* @external {@link http://link.to.cdn/jquery.js|CDN} */
 
 var svgPort = (function () {
-  'use strict';
+  //'use strict';
 
   var DOM = {};
   var works = [{
@@ -12,7 +14,7 @@ var svgPort = (function () {
     ipadUrl: "assets/simon_ipad.png",
     iphoneUrl: "assets/simon_iphone.png",
     title: "Simon",
-    descrip: "Classic 1980s game",
+    descrip: "Classic 1980s game in JavaScript",
     pen: "https://codepen.io/LaerTrech/full/GNGaJy",
     codepen: "https://codepen.io/LaerTrech/pen/GNGaJy"
   }, {
@@ -20,7 +22,7 @@ var svgPort = (function () {
     ipadUrl: "assets/tictactoe_ipad.png",
     iphoneUrl: "assets/tictactoe_iphone.png",
     title: "Tic-Tac-Toe",
-    descrip: "Choose X or O. Play against another human or AI.",
+    descrip: "JavaScript game implementing AI.",
     pen: "https://codepen.io/LaerTrech/full/XNNxEE",
     codepen: "https://codepen.io/LaerTrech/pen/XNNxEE"
   }, {
@@ -28,7 +30,7 @@ var svgPort = (function () {
     ipadUrl: "assets/twitch_ipad.png",
     iphoneUrl: "assets/twitch_iphone.png",
     title: "freecodeCamp on Twitch",
-    descrip: "Uses Twitch.tv JSON API to display fCC and other users' stream activity",
+    descrip: "Uses Twitch.tv JSON API to display fCC and other users' stream activity; logo designed by combining freeCodeCamp's with Twitch's",
     pen: "https://codepen.io/LaerTrech/full/yJgYxB",
     codepen: "https://codepen.io/LaerTrech/pen/yJgYxB"
   }, {
@@ -60,7 +62,7 @@ var svgPort = (function () {
     ipadUrl: "assets/calc_ipad.png",
     iphoneUrl: "assets/calc_iphone.png",
     title: "JavaScript Calculator",
-    descrip: "With mysterious, otherworldly aesthetic",
+    descrip: "With 'mysterious, otherworldly' aesthetic",
     pen: "https://codepen.io/LaerTrech/full/gwZAVQ",
     codepen: "https://codepen.io/LaerTrech/pen/gwZAVQ"
   }, {
@@ -68,7 +70,7 @@ var svgPort = (function () {
     ipadUrl: "assets/purplerain_ipad.png",
     iphoneUrl: "assets/purplerain_iphone.png",
     title: "Purple Rain Every Day",
-    descrip: "Prince-themed weather app with Dark Sky API, background image changes depending on conditions",
+    descrip: "Prince-themed weather app with Dark Sky API; background image changes depending on conditions",
     pen: "https://codepen.io/LaerTrech/full/RRPxaZ",
     codepen: "https://codepen.io/LaerTrech/pen/RRPxaZ"
   }, {
@@ -76,7 +78,8 @@ var svgPort = (function () {
     ipadUrl: "assets/focustipad.png",
     iphoneUrl: "assets/focust_iphone.png",
     title: "Focust",
-    descrip: "Productivity app with to-do and shopping lists and work and break session timer; I also designed logo"
+    descrip: "Productivity app with to-do and shopping lists and work and break session timer; I also designed logo",
+    codepen: "https://github.com/icartusacrimea/focust"
   }];
 
   function cacheDom() {
