@@ -1,13 +1,10 @@
 "use strict";
-
 /* @global document */
 /*jslint es6 */
 /* @global $ */
 /* @external {@link http://link.to.cdn/jquery.js|CDN} */
-
-var svgPort = (function () {
+var svgPort = (function() {
   //'use strict';
-
   var DOM = {};
   var works = [{
     imageUrl: "assets/Simon.jpg",
@@ -85,7 +82,6 @@ var svgPort = (function () {
   function cacheDom() {
     DOM.$main = $('#port-main');
   }
-
   // generate laptop/iphone/ipad SVG with inner raster images
   function generateDevices(work) {
     var devices = `<a href="${work.pen}"><svg width="65%" viewBox="0 0 897 452" xmlns="http://www.w3.org/2000/svg"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="IPAD" transform="translate(681.000000, 55.000000)" stroke="#7E89A3"> <path d="M202.986,317 L12.097,317 C5.462,317 0.083,311.623 0.083,304.99 L0.083,12.093 C0.083,5.46 5.461,0.083 12.097,0.083 L202.986,0.083 C209.622,0.083 215,5.46 215,12.093 L215,304.99 C215,311.623 209.622,317 202.986,317 Z" id="bezel" stroke-width="2" fill="#FDFDFD"></path> <path d="M202.986,317 L12.097,317 C5.462,317 0.083,311.623 0.083,304.99 L0.083,12.093 C0.083,5.46 5.461,0.083 12.097,0.083 L202.986,0.083 C209.622,0.083 215,5.46 215,12.093 L215,304.99 C215,311.623 209.622,317 202.986,317 Z" id="bezel-2" stroke-width="2" fill="#FDFDFD"></path> <rect id="screen" fill="#FFFFFF" x="17" y="32" width="181.999" height="252.917"></rect> <image xlink:href="${work.ipadUrl}" x="17" y="33" width="181" height="251" preserveAspectRatio="xMidYMid slice"></image> <circle id="lock" cx="108.021" cy="300.021" r="8.021"></circle> <circle id="camera" cx="106.99" cy="16.99" r="2.99"></circle> </g> 
@@ -100,43 +96,32 @@ var svgPort = (function () {
   }
 
   function render() {
-
     works.forEach(function(work) {
-
-      DOM.$main
-        .append(generateDevices(work));
+      DOM.$main.append(generateDevices(work));
     });
-
   }
-
   // public init method
   function init() {
     cacheDom();
     render();
   }
-
   // return public methods
   return {
     init: init
   };
-
 }());
-
 $(document).ready(function() {
-
   // load modules via public methods
   svgPort.init();
-
   // initial load behavior
   $('.navbar, .navbar-brand').addClass('hidden');
   $('#heading').hide().fadeIn(3000);
-
   $('a[href*="#"]:not([href="#"])').click(function() {
     $('.navbar, .navbar-brand').removeClass('hidden');
     $('.navbar, .navbar-brand').addClass('shown');
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
@@ -145,8 +130,7 @@ $(document).ready(function() {
       }
     }
   });
-
-$('.navbar-brand').click(function() {
+  $('.navbar-brand').click(function() {
     $('.navbar, .navbar-brand').removeClass('shown');
     $('.navbar, .navbar-brand').addClass('hidden');
     $('html, body').animate({
@@ -154,5 +138,4 @@ $('.navbar-brand').click(function() {
     }, 1000);
     return false;
   });
-
 });

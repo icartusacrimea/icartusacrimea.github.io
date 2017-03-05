@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
 }
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -33,7 +32,7 @@ body {
 .navbar-right {
   margin-right: 10%;
 }
-.navbar .nav > li > a {
+.navbar .nav>li>a {
   line-height: 19px;
   padding: 13px;
   font-size: 1.6em;
@@ -42,7 +41,7 @@ body {
   color: white;
   cursor: pointer;
 }
-.navbar .nav >li > a:hover {
+.navbar .nav>li>a:hover {
   color: #00ECFF;
 }
 .navbar-inverse .navbar-brand {
@@ -89,17 +88,13 @@ ul.social {
   transition: .3s;
   color: white;
 }
-#free-code-camp,
-#github {
+#free-code-camp, #github {
   font-size: 2.2em;
   padding: 8px;
   transition: .3s;
   color: white;
 }
-#codepen:hover,
-#free-code-camp:hover,
-#github:hover,
-#linked-in:hover {
+#codepen:hover, #free-code-camp:hover, #github:hover, #linked-in:hover {
   color: #00ECFF;
   transition: .3s;
 }
@@ -107,19 +102,24 @@ ul.social {
   color: white;
   display: inline-block;
 }
-.btn {
+.mainIcon {
   background: transparent;
   display: inline-block;
 }
-button:hover span {
+.mainIcon:hover span {
   color: #00ECFF;
   transition: .4s;
+  text-decoration: none;
+}
+.mainIcon:hover {
+  color: #00ECFF;
+  transition: .4s;
+  text-decoration: none;
 }
 .glyphicon {
   font-size: 2.5em;
 }
-#projects,
-#user {
+#projects, #user {
   width: auto;
   text-align: center;
   color: white;
@@ -145,7 +145,7 @@ section {
   padding-bottom: 45px;
 }
 #portfolio {
-  background-color: rgba(11, 148, 105, .6); 
+  background-color: rgba(11, 148, 105, .6);
 }
 h3 {
   margin: 0 auto;
