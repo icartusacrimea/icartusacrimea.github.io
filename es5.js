@@ -16,6 +16,22 @@ var svgPort = function () {
     pen: "https://codepen.io/LaerTrech/full/GNGaJy",
     codepen: "https://codepen.io/LaerTrech/pen/GNGaJy"
   }, {
+    imageUrl: "assets/markdown.png",
+    ipadUrl: "assets/markdown_ipad.png",
+    iphoneUrl: "assets/markdown_iphone.png",
+    title: "GitHub-Flavored Markdown Previewer",
+    descrip: "Built with React.js and Sass; uses Marked API",
+    pen: "http://codepen.io/LaerTrech/full/JEJgZE",
+    codepen: "https://github.com/icartusacrimea/markdown_previewer"
+  }, {
+  	imageUrl: "assets/leaderboard.png",
+    ipadUrl: "assets/leaderboard.png",
+    iphoneUrl: "assets/leaderboard.png",
+    title: "Camper Leaderboard",
+    descrip: "Sorts campers with most brownie points by past 30 days and all time. Built with React.js and Sass",
+    pen: "http://codepen.io/LaerTrech/full/RpaZvv",
+    codepen: "https://github.com/icartusacrimea/camper_leaderboard"
+  }, {
     imageUrl: "assets/tictactoe.png",
     ipadUrl: "assets/tictactoe_ipad.png",
     iphoneUrl: "assets/tictactoe_iphone.png",
@@ -71,13 +87,6 @@ var svgPort = function () {
     descrip: "Prince-themed weather app with Dark Sky API; background image changes depending on conditions",
     pen: "https://codepen.io/LaerTrech/full/RRPxaZ",
     codepen: "https://codepen.io/LaerTrech/pen/RRPxaZ"
-  }, {
-    imageUrl: "assets/focust.png",
-    ipadUrl: "assets/focustipad.png",
-    iphoneUrl: "assets/focust_iphone.png",
-    title: "Focust",
-    descrip: "Productivity app with to-do and shopping lists and work and break session timer; I also designed logo",
-    codepen: "https://github.com/icartusacrimea/focust"
   }];
 
   function cacheDom() {
