@@ -12,7 +12,7 @@ var svgPort = function () {
     ipadUrl: "assets/simon_ipad.png",
     iphoneUrl: "assets/simon_iphone.png",
     title: "Simon",
-    descrip: "Classic 1980s game in JavaScript",
+    descrip: "Classic 1980s memory game made with JavaScript and jQuery",
     pen: "https://codepen.io/LaerTrech/full/GNGaJy",
     codepen: "https://codepen.io/LaerTrech/pen/GNGaJy"
   }, {
@@ -25,10 +25,10 @@ var svgPort = function () {
     codepen: "https://github.com/icartusacrimea/markdown_previewer"
   }, {
   	imageUrl: "assets/leaderboard.png",
-    ipadUrl: "assets/leaderboard.png",
-    iphoneUrl: "assets/leaderboard.png",
+    ipadUrl: "assets/leaderboard_ipad.png",
+    iphoneUrl: "assets/leaderboard_iphone.png",
     title: "Camper Leaderboard",
-    descrip: "Sorts campers with most brownie points by past 30 days and all time. Built with React.js and Sass",
+    descrip: "Sort (fCC) campers with most brownie points by past 30 days or all time. Built with React.js and Sass",
     pen: "http://codepen.io/LaerTrech/full/RpaZvv",
     codepen: "https://github.com/icartusacrimea/camper_leaderboard"
   }, {
@@ -68,7 +68,7 @@ var svgPort = function () {
     ipadUrl: "assets/pomo_ipad.png",
     iphoneUrl: "assets/pomo_iphone.png",
     title: "Pomodoro Clock",
-    descrip: "Work and break session timer",
+    descrip: "Work and break session timer in JavaScript and jQuery",
     pen: "https://codepen.io/LaerTrech/full/xEawZR",
     codepen: "https://codepen.io/LaerTrech/pen/xEawZR"
   }, {
@@ -76,7 +76,7 @@ var svgPort = function () {
     ipadUrl: "assets/calc_ipad.png",
     iphoneUrl: "assets/calc_iphone.png",
     title: "JavaScript Calculator",
-    descrip: "With 'mysterious, otherworldly' aesthetic",
+    descrip: "With my own 'mysterious, otherworldly' (so it's been described) aesthetic",
     pen: "https://codepen.io/LaerTrech/full/gwZAVQ",
     codepen: "https://codepen.io/LaerTrech/pen/gwZAVQ"
   }, {
@@ -84,7 +84,7 @@ var svgPort = function () {
     ipadUrl: "assets/purplerain_ipad.png",
     iphoneUrl: "assets/purplerain_iphone.png",
     title: "Purple Rain Every Day",
-    descrip: "Prince-themed weather app with Dark Sky API; background image changes depending on conditions",
+    descrip: "A gift I created for someone special: location-based weather app with Dark Sky API; background image changes depending on conditions",
     pen: "https://codepen.io/LaerTrech/full/RRPxaZ",
     codepen: "https://codepen.io/LaerTrech/pen/RRPxaZ"
   }];
